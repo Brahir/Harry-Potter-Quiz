@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Harry Potter Quiz</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to our Harry Potter Quiz!</h1>
+        <img class = "hcrest" src="img/hogwarts_crest.png" alt="hogwarts crest">
+    </header>
+    
+    <main>
+        <h1><b>Year 1</b></h1>
+        <form name='hpquiz' id='hpquiz'>
+            <div>
+                <p>Harry lives with his aunt and his uncle, and with his cousin, what's the name of this last one?</p>
+                <p><input type="radio" name="question1" value="q1correct"> Dudley</p>
+                <p><input type="radio" name="question1" value="q1incorrect"> Seamus</p>
+                <p><input type="radio" name="question1" value="q1incorrect"> Vernon</p>
+                <p><input type="radio" name="question1" value="q1incorrect"> Neville</p>
+            </div>
+
+            <div>
+                <p>Which is uncles Vernon favourite day of the weekend and why?</p>
+                <p><input type="radio" name="question2" value="q2incorrect"> Sunday, beacause he can watch football</p>
+                <p><input type="radio" name="question2" value="q2incorrect"> Saturday, beacause he can sleep up to late</p>
+                <p><input type="radio" name="question2" value="q2correct"> Sunday, beacause there is no mail</p>
+                <p><input type="radio" name="question2" value="q2incorrect"> Saturday, beacause he goes to the cinema</p>
+            </div>
+
+            <div>
+                <p>Where do Harry Potter and Draco Malfoy meet for the first time?</p>
+                <p><input type="radio" name="question3" value="q3incorrect"> Platform 9 3/4</p>
+                <p><input type="radio" name="question3" value="q3correct"> Madam Malkin's "Robes for all Occasions"</p>
+                <p><input type="radio" name="question3" value="q3incorrect"> Hogwarts Express</p>
+                <p><input type="radio" name="question3" value="q3incorrect"> Hogwarts Main Hall</p>
+            </div>
+
+            <div>
+                <p>What is the difference between monkshood and wolfsbane?</p>
+                <p><input type="radio" name="question4" value="q4incorrect"> One is poisonous and the other is not</p>
+                <p><input type="radio" name="question4" value="q4incorrect"> One is a plant and the other an animal</p>
+                <p><input type="radio" name="question4" value="q4incorrect"> One is green and the other is red</p>
+                <p><input type="radio" name="question4" value="q4correct"> There is no difference</p>
+            </div>
+
+            <div>
+                <p>Which is Gryffindor students characteristic?</p>
+                <p><input type="radio" name="question5" value="q5correct"> Courage</p>
+                <p><input type="radio" name="question5" value="q5incorrect"> Honour</p>
+                <p><input type="radio" name="question5" value="q5incorrect"> Inteligence</p>
+                <p><input type="radio" name="question5" value="q5incorrect"> Ambitious</p>
+            </div>
+
+            <div>
+                <p>Who was referee on the quidditch match Gryffindor vs Hufflepuff?</p>
+                <p><input type="radio" name="question6" value="q6correct"> Severus Snape</p>
+                <p><input type="radio" name="question6" value="q6incorrect"> Madame Hooch</p>
+                <p><input type="radio" name="question6" value="q6incorrect"> Professor Quirrell</p>
+                <p><input type="radio" name="question6" value="q6incorrect"> Lee Jordan</p>
+            </div>
+
+            <div>
+                <p>At the end of the year, who won the 10 points that made Gryffindor win?</p>
+                <p><input type="radio" name="question7" value="q7incorrect"> Angelina Johnson</p>
+                <p><input type="radio" name="question7" value="q7incorrect"> George Weasley</p>
+                <p><input type="radio" name="question7" value="q7correct"> Neville Longbottom</p>
+                <p><input type="radio" name="question7" value="q7incorrect"> Harry Potter</p>
+            </div>
+
+            <div>
+                <p>What is it that Hagrid gives to Harry the day they are returning home?</p>
+                <p><input type="radio" name="question8" value="q8incorrect"> A cake</p>
+                <p><input type="radio" name="question8" value="q8incorrect"> A brand new broom </p>
+                <p><input type="radio" name="question8" value="q8incorrect"> A dragon egg</p>
+                <p><input type="radio" name="question8" value="q8correct"> An album with pictures of his parents</p>
+            </div>
+            <input type="button" name="" id="button" value="I'm done!" onclick="check()">
+        </form>
+        <p id='result'></p>
+    </main>
+    
+    <footer>
+        <p>Made by Clara Chaves Urquiza & Mariano Chaves</p>
+    </footer>
+    <script src='index.js'></script> 
+</body>
+</html>

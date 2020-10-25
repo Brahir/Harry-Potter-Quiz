@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 2rem;
+}
+
+#button {
+    background-color: black;
+    color: white;
+    margin-left: 2rem;
+    font-size: 18px;
+}
+footer {
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+}
+header {
+    text-align: center;
+}
+
+.hcrest {
+    width: 300px;
+    background-color: transparent;
+}
