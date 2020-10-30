@@ -1,5 +1,5 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(208, 200, 200);
     color: black;
     font-size: 20px;
     font-weight: bolder;
@@ -12,6 +12,7 @@ body {
     margin-left: 2rem;
     font-size: 18px;
 }
+
 footer {
     background-color: white;
     color: black;
@@ -25,4 +26,8 @@ header {
 .hcrest {
     width: 300px;
     background-color: transparent;
+}
+
+.hphouse {
+    align-self: left;
 }

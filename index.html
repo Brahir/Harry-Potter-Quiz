@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,10 +12,27 @@
 <body>
     <header>
         <h1 id="title">Welcome to our Harry Potter Quiz!</h1>
-        <img class = "hcrest" src="img/hogwarts_crest.png" alt="hogwarts crest">
+        <img class="hcrest" src="img/hogwarts_crest.png" alt="hogwarts crest">
     </header>
-    
-    <main>
+
+    <form name="hphouse" id="hphouse">
+        <div>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+        </div>
+        <div>
+            <h3>What house represents you?</h3>
+            <p style="color:red"><input type="radio" name="house" value="Gryffindor"><b>Gryffindor</b></p>
+            <p style="color: yellow;"><input type="radio" name="house" value="Hufflepuff">Hufflepuff</p>
+            <p style="color: green;"><input type="radio" name="house" value="Slytherin">Slytherin</p>
+            <p style="color: blue;"><input type="radio" name="house" value="Ravenclaw">Ravenclaw</p>
+        </div>
+        <input type="button" value="Submit" onclick="participant()">
+    </form>
+
+    <main id="main">
         <h2><b>Year 1</b></h2>
         <form name='hpquiz' id='hpquiz'>
             <div>
@@ -28,9 +46,11 @@
             <div>
                 <h3>Which is uncles Vernon favourite day of the weekend and why?</h3>
                 <p><input type="radio" name="question2" value="q2incorrect"> Sunday, beacause he can watch football</p>
-                <p><input type="radio" name="question2" value="q2incorrect"> Saturday, beacause he can sleep up to late</p>
+                <p><input type="radio" name="question2" value="q2incorrect"> Saturday, beacause he can sleep up to late
+                </p>
                 <p><input type="radio" name="question2" value="q2correct"> Sunday, beacause there is no mail</p>
-                <p><input type="radio" name="question2" value="q2incorrect"> Saturday, beacause he goes to the cinema</p>
+                <p><input type="radio" name="question2" value="q2incorrect"> Saturday, beacause he goes to the cinema
+                </p>
             </div>
 
             <div>
@@ -85,13 +105,15 @@
         <p id='result'></p>
     </main>
 
-    <audio id="backgroundAudio" controls >
+    
+    <audio id="backgroundAudio" >
         <source src="mp3/Harry_Potter_Theme.mp3" type="audio/mpeg" allow="autoplay">
     </audio>
 
     <footer>
         <p>Made by Clara Chaves Urquiza & Mariano Chaves</p>
     </footer>
-    <script src='index.js'></script> 
+    <script src='index.js'></script>
 </body>
+
 </html>

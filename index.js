@@ -1,3 +1,19 @@
+main.style.display = 'none';
+
+function participant() {
+    var house = document.hphouse.house.value
+    var fname = document.hphouse.fname.value
+    var lname = document.hphouse.lname.value
+    main.style.display = 'inherit';
+    hphouse.style.display = 'none'
+    title.textContent = `Welcome ${fname} ${lname}!`
+    if (house=="Hufflepuff") {document.querySelector('img').src = 'img/hufflepuff.png'}
+    else if (house=="Gryffindor") {document.querySelector('img').src = 'img/gryffindor.jpg'}
+    else if (house=="Slytherin") {document.querySelector('img').src = 'img/slytherin.jpg'}
+    else if (house=="Ravenclaw") {document.querySelector('img').src = 'img/ravenclaw.jpg'}
+    else {}
+}
+
 function check(){
     var c = 0;
     var q1 = document.hpquiz.question1.value;
@@ -30,12 +46,13 @@ function check(){
   
 }
 
-const name = prompt('What is your name?');
-var house = prompt('What house are you in?')
-title.textContent = `Welcome ${name}, to our Harry Potter Quiz!`
 
-if (house=="Hufflepuff") {document.querySelector('img').src = 'img/hufflepuff.png'}
-else if (house=="Gryffindor") {document.querySelector('img').src = 'img/gryffindor.jpg'}
-else if (house=="Slytherin") {document.querySelector('img').src = 'img/slytherin.jpg'}
-else if (house=="Ravenclaw") {document.querySelector('img').src = 'img/ravenclaw.jpg'}
-else {}
+// const name = prompt('What is your name?');
+// var house = prompt('What house are you in?')
+// 
+
+// if (house=="Hufflepuff") {document.querySelector('img').src = 'img/hufflepuff.png'}
+// else if (house=="Gryffindor") {document.querySelector('img').src = 'img/gryffindor.jpg'}
+// else if (house=="Slytherin") {document.querySelector('img').src = 'img/slytherin.jpg'}
+// else if (house=="Ravenclaw") {document.querySelector('img').src = 'img/ravenclaw.jpg'}
+// else {}
