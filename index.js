@@ -31,8 +31,11 @@ function check(){
 }
 
 const name = prompt('What is your name?');
-var house = 
+var house = prompt('What house are you in?')
 title.textContent = `Welcome ${name}, to our Harry Potter Quiz!`
 
-if (house=="Gryffindor") {document.querySelector('img').src = 'img/gryffindor.jpg'}
+if (house=="Hufflepuff") {document.querySelector('img').src = 'img/hufflepuff.png'}
+else if (house=="Gryffindor") {document.querySelector('img').src = 'img/gryffindor.jpg'}
+else if (house=="Slytherin") {document.querySelector('img').src = 'img/slytherin.jpg'}
+else if (house=="Ravenclaw") {document.querySelector('img').src = 'img/ravenclaw.jpg'}
 else {}
