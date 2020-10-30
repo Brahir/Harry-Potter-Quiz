@@ -29,3 +29,10 @@ function check(){
     }
   
 }
+
+const name = prompt('What is your name?');
+var house = 
+title.textContent = `Welcome ${name}, to our Harry Potter Quiz!`
+
+if (house=="Gryffindor") {document.querySelector('img').src = 'img/gryffindor.jpg'}
+else {}
